@@ -1,8 +1,8 @@
-# Jubbio Project - Discord Moderasyon + Ekonomi Botu
+# Jubbio Project - Moderasyon + Ekonomi Botu
 
 ![Jubbio Hero](docs/images/readme-hero.png)
 
-Bu proje, `@jubbio/core` uzerinde calisan, slash-komut odakli bir Discord botudur.
+Bu proje, `@jubbio/core` uzerinde calisan, slash-komut odakli bir Jubbio botudur.
 Ana odaklar:
 - Moderasyon otomasyonu
 - Sunucu sistem yonetimi (modlog, giris/cikis, otorol)
@@ -32,7 +32,7 @@ Ana odaklar:
 ## Proje Ozet
 Bot, event tabanli calisir:
 - `app.js` tum komutlari ve event dosyalarini yukler.
-- `ready` eventi bot acilisinda slash komutlari Discord API'ye senkronlar.
+- `ready` eventi bot acilisinda slash komutlari Jubbio API'ye senkronlar.
 - `interactionCreate` slash komutlari, yardim secim menusu ve anket butonlarini yonetir.
 - Moderasyon/sistem event'leri (uye giris-cikis, ban, mesaj silme/duzenleme) modlog entegrasyonu ile kayit alir.
 - Ekonomi verileri Firebase Realtime Database'e yazilir.
@@ -91,7 +91,7 @@ Calisma akisi:
 
 ## Gereksinimler
 - Node.js 18+
-- Discord bot token
+- Jubbio bot token
 - Firebase service account JSON
 - Firebase Realtime Database URL
 
@@ -116,7 +116,7 @@ Copy-Item .env.example .env
 
 3. `.env` icini doldur:
 ```env
-BOT_TOKEN=discord_bot_token
+BOT_TOKEN=jubbio_bot_token
 DEV_GUILD_ID=opsiyonel_test_sunucusu
 API_KEY=opsiyonel_ai_key
 API_URL=opsiyonel_openai_compatible_url
@@ -133,7 +133,7 @@ API_URL=opsiyonel_openai_compatible_url
 ## Ortam Degiskenleri
 | Degisken | Zorunlu | Aciklama |
 |---|---|---|
-| `BOT_TOKEN` | Evet | Discord bot token |
+| `BOT_TOKEN` | Evet | Jubbio bot token |
 | `DEV_GUILD_ID` | Hayir | Komutlari test guild'ine hizli senkronlamak icin |
 | `GUILD_ID` | Hayir | `DEV_GUILD_ID` yoksa alternatif guild hedefi |
 | `COMMAND_GUILD_ID` | Hayir | `DEV_GUILD_ID` yoksa alternatif guild hedefi |
@@ -291,3 +291,4 @@ Bu maddeler duzeltilmeden AI/advanced logger akislarinda runtime hata alinabilir
 
 ---
 README, projenin 3 Mart 2026 tarihindeki mevcut kod durumuna gore hazirlandi.
+
